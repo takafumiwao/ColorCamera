@@ -3,25 +3,69 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AC0347EB22E3212900B139BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0347EA22E3212800B139BF /* Assets.xcassets */; };
+		AC0347ED22E3615F00B139BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = AC0347EC22E3615F00B139BF /* GoogleService-Info.plist */; };
+		AC0347EF22E40D5C00B139BF /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0347EE22E40D5C00B139BF /* Image.swift */; };
+		AC0347F122E7424400B139BF /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0347F022E7424400B139BF /* Color.swift */; };
+		AC0347F322E7440E00B139BF /* ColorDataManagerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0347F222E7440E00B139BF /* ColorDataManagerDelegate.swift */; };
+		AC0347F522E744C400B139BF /* ColorDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0347F422E744C400B139BF /* ColorDataManager.swift */; };
 		AC04879F22DADD6C008EA249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04879E22DADD6C008EA249 /* AppDelegate.swift */; };
-		AC0487A122DADD6C008EA249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0487A022DADD6C008EA249 /* ViewController.swift */; };
-		AC0487A422DADD6C008EA249 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0487A222DADD6C008EA249 /* Main.storyboard */; };
-		AC0487A622DADD6C008EA249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC0487A522DADD6C008EA249 /* Assets.xcassets */; };
 		AC0487A922DADD6C008EA249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0487A722DADD6C008EA249 /* LaunchScreen.storyboard */; };
+		AC62100822DBF11000B9BB57 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62100722DBF11000B9BB57 /* AuthViewController.swift */; };
+		AC62100D22DBF19400B9BB57 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62100C22DBF19400B9BB57 /* Auth.storyboard */; };
+		AC62101022DBF1BF00B9BB57 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62100F22DBF1BF00B9BB57 /* CameraViewController.swift */; };
+		AC62101222DBF1D000B9BB57 /* Camera.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62101122DBF1D000B9BB57 /* Camera.storyboard */; };
+		AC62101522DBF1F200B9BB57 /* ColorDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62101422DBF1F200B9BB57 /* ColorDetailViewController.swift */; };
+		AC62101722DBF20400B9BB57 /* ColorDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62101622DBF20400B9BB57 /* ColorDetail.storyboard */; };
+		AC62101A22DBF22300B9BB57 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62101922DBF22300B9BB57 /* Home.storyboard */; };
+		AC62101C22DBF22F00B9BB57 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62101B22DBF22F00B9BB57 /* HomeViewController.swift */; };
+		AC62101F22DBF26800B9BB57 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62101E22DBF26800B9BB57 /* MyListViewController.swift */; };
+		AC62102122DBF27900B9BB57 /* MyList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62102022DBF27900B9BB57 /* MyList.storyboard */; };
+		AC62102422DBF2A600B9BB57 /* MyListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62102322DBF2A600B9BB57 /* MyListDetailViewController.swift */; };
+		AC62102622DBF2BC00B9BB57 /* MyListDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62102522DBF2BC00B9BB57 /* MyListDetail.storyboard */; };
+		AC62102922DBF2F200B9BB57 /* HomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62102822DBF2F200B9BB57 /* HomeDetailViewController.swift */; };
+		AC62102B22DBF30300B9BB57 /* HomeDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62102A22DBF30300B9BB57 /* HomeDetail.storyboard */; };
+		AC62102E22DBF32E00B9BB57 /* LaunchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62102D22DBF32E00B9BB57 /* LaunchViewController.swift */; };
+		AC62103022DBF33C00B9BB57 /* Launch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62102F22DBF33C00B9BB57 /* Launch.storyboard */; };
+		AC905A5322ED5CC200067355 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC905A5222ED5CC200067355 /* ImageViewController.swift */; };
+		EAFBD38D69272BE8ABD04A65 /* Pods_ColorCamera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5823D928450BE3C62BFF96DA /* Pods_ColorCamera.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4BE68AD391681191F15D5B32 /* Pods-ColorCamera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorCamera.debug.xcconfig"; path = "Target Support Files/Pods-ColorCamera/Pods-ColorCamera.debug.xcconfig"; sourceTree = "<group>"; };
+		5823D928450BE3C62BFF96DA /* Pods_ColorCamera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ColorCamera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8EB0D55C49A4C3C6B0C509AE /* Pods-ColorCamera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ColorCamera.release.xcconfig"; path = "Target Support Files/Pods-ColorCamera/Pods-ColorCamera.release.xcconfig"; sourceTree = "<group>"; };
+		AC0347EA22E3212800B139BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AC0347EC22E3615F00B139BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AC0347EE22E40D5C00B139BF /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		AC0347F022E7424400B139BF /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		AC0347F222E7440E00B139BF /* ColorDataManagerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDataManagerDelegate.swift; sourceTree = "<group>"; };
+		AC0347F422E744C400B139BF /* ColorDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDataManager.swift; sourceTree = "<group>"; };
 		AC04879B22DADD6C008EA249 /* ColorCamera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ColorCamera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC04879E22DADD6C008EA249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AC0487A022DADD6C008EA249 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		AC0487A322DADD6C008EA249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		AC0487A522DADD6C008EA249 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC0487A822DADD6C008EA249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC0487AA22DADD6C008EA249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC62100722DBF11000B9BB57 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		AC62100C22DBF19400B9BB57 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
+		AC62100F22DBF1BF00B9BB57 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
+		AC62101122DBF1D000B9BB57 /* Camera.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Camera.storyboard; sourceTree = "<group>"; };
+		AC62101422DBF1F200B9BB57 /* ColorDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorDetailViewController.swift; sourceTree = "<group>"; };
+		AC62101622DBF20400B9BB57 /* ColorDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ColorDetail.storyboard; sourceTree = "<group>"; };
+		AC62101922DBF22300B9BB57 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		AC62101B22DBF22F00B9BB57 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		AC62101E22DBF26800B9BB57 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
+		AC62102022DBF27900B9BB57 /* MyList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyList.storyboard; sourceTree = "<group>"; };
+		AC62102322DBF2A600B9BB57 /* MyListDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListDetailViewController.swift; sourceTree = "<group>"; };
+		AC62102522DBF2BC00B9BB57 /* MyListDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyListDetail.storyboard; sourceTree = "<group>"; };
+		AC62102822DBF2F200B9BB57 /* HomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDetailViewController.swift; sourceTree = "<group>"; };
+		AC62102A22DBF30300B9BB57 /* HomeDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeDetail.storyboard; sourceTree = "<group>"; };
+		AC62102D22DBF32E00B9BB57 /* LaunchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchViewController.swift; sourceTree = "<group>"; };
+		AC62102F22DBF33C00B9BB57 /* Launch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Launch.storyboard; sourceTree = "<group>"; };
+		AC905A5222ED5CC200067355 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +73,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAFBD38D69272BE8ABD04A65 /* Pods_ColorCamera.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2A9074C76A2D9CFCE535C308 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5823D928450BE3C62BFF96DA /* Pods_ColorCamera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		AC04879222DADD6C008EA249 = {
 			isa = PBXGroup;
 			children = (
 				AC04879D22DADD6C008EA249 /* ColorCamera */,
 				AC04879C22DADD6C008EA249 /* Products */,
+				D71BB3A40B073AD20AFDEADF /* Pods */,
+				2A9074C76A2D9CFCE535C308 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +109,115 @@
 		AC04879D22DADD6C008EA249 /* ColorCamera */ = {
 			isa = PBXGroup;
 			children = (
+				AC62100522DBF0DF00B9BB57 /* View */,
+				AC0347EE22E40D5C00B139BF /* Image.swift */,
 				AC04879E22DADD6C008EA249 /* AppDelegate.swift */,
-				AC0487A022DADD6C008EA249 /* ViewController.swift */,
-				AC0487A222DADD6C008EA249 /* Main.storyboard */,
-				AC0487A522DADD6C008EA249 /* Assets.xcassets */,
 				AC0487A722DADD6C008EA249 /* LaunchScreen.storyboard */,
+				AC0347EA22E3212800B139BF /* Assets.xcassets */,
 				AC0487AA22DADD6C008EA249 /* Info.plist */,
+				AC0347EC22E3615F00B139BF /* GoogleService-Info.plist */,
 			);
 			path = ColorCamera;
+			sourceTree = "<group>";
+		};
+		AC62100522DBF0DF00B9BB57 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC62101822DBF20F00B9BB57 /* Home */,
+				AC62102C22DBF30F00B9BB57 /* Launch */,
+				AC62102722DBF2DB00B9BB57 /* HomeDetail */,
+				AC62102222DBF28E00B9BB57 /* MyListDetail */,
+				AC62101D22DBF24600B9BB57 /* MyList */,
+				AC62101322DBF1D700B9BB57 /* ColorDetail */,
+				AC62100E22DBF19D00B9BB57 /* Camera */,
+				AC62100622DBF0F100B9BB57 /* Auth */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		AC62100622DBF0F100B9BB57 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				AC62100722DBF11000B9BB57 /* AuthViewController.swift */,
+				AC62100C22DBF19400B9BB57 /* Auth.storyboard */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		AC62100E22DBF19D00B9BB57 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				AC62100F22DBF1BF00B9BB57 /* CameraViewController.swift */,
+				AC905A5222ED5CC200067355 /* ImageViewController.swift */,
+				AC62101122DBF1D000B9BB57 /* Camera.storyboard */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		AC62101322DBF1D700B9BB57 /* ColorDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AC62101422DBF1F200B9BB57 /* ColorDetailViewController.swift */,
+				AC62101622DBF20400B9BB57 /* ColorDetail.storyboard */,
+			);
+			path = ColorDetail;
+			sourceTree = "<group>";
+		};
+		AC62101822DBF20F00B9BB57 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				AC0347F022E7424400B139BF /* Color.swift */,
+				AC0347F222E7440E00B139BF /* ColorDataManagerDelegate.swift */,
+				AC0347F422E744C400B139BF /* ColorDataManager.swift */,
+				AC62101B22DBF22F00B9BB57 /* HomeViewController.swift */,
+				AC62101922DBF22300B9BB57 /* Home.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		AC62101D22DBF24600B9BB57 /* MyList */ = {
+			isa = PBXGroup;
+			children = (
+				AC62101E22DBF26800B9BB57 /* MyListViewController.swift */,
+				AC62102022DBF27900B9BB57 /* MyList.storyboard */,
+			);
+			path = MyList;
+			sourceTree = "<group>";
+		};
+		AC62102222DBF28E00B9BB57 /* MyListDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AC62102322DBF2A600B9BB57 /* MyListDetailViewController.swift */,
+				AC62102522DBF2BC00B9BB57 /* MyListDetail.storyboard */,
+			);
+			path = MyListDetail;
+			sourceTree = "<group>";
+		};
+		AC62102722DBF2DB00B9BB57 /* HomeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				AC62102822DBF2F200B9BB57 /* HomeDetailViewController.swift */,
+				AC62102A22DBF30300B9BB57 /* HomeDetail.storyboard */,
+			);
+			path = HomeDetail;
+			sourceTree = "<group>";
+		};
+		AC62102C22DBF30F00B9BB57 /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				AC62102D22DBF32E00B9BB57 /* LaunchViewController.swift */,
+				AC62102F22DBF33C00B9BB57 /* Launch.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		D71BB3A40B073AD20AFDEADF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4BE68AD391681191F15D5B32 /* Pods-ColorCamera.debug.xcconfig */,
+				8EB0D55C49A4C3C6B0C509AE /* Pods-ColorCamera.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC0487AD22DADD6C008EA249 /* Build configuration list for PBXNativeTarget "ColorCamera" */;
 			buildPhases = (
+				58D65B02428919901B9C5BF9 /* [CP] Check Pods Manifest.lock */,
 				AC04879722DADD6C008EA249 /* Sources */,
 				AC04879822DADD6C008EA249 /* Frameworks */,
 				AC04879922DADD6C008EA249 /* Resources */,
+				E8AB8774F8D9302138107FF3 /* [CP] Embed Pods Frameworks */,
+				268C41EE84F93E9B54C67A96 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -122,35 +281,106 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AC62100D22DBF19400B9BB57 /* Auth.storyboard in Resources */,
+				AC62103022DBF33C00B9BB57 /* Launch.storyboard in Resources */,
+				AC62101222DBF1D000B9BB57 /* Camera.storyboard in Resources */,
+				AC62102122DBF27900B9BB57 /* MyList.storyboard in Resources */,
+				AC0347EB22E3212900B139BF /* Assets.xcassets in Resources */,
+				AC62102622DBF2BC00B9BB57 /* MyListDetail.storyboard in Resources */,
+				AC62101722DBF20400B9BB57 /* ColorDetail.storyboard in Resources */,
+				AC62101A22DBF22300B9BB57 /* Home.storyboard in Resources */,
 				AC0487A922DADD6C008EA249 /* LaunchScreen.storyboard in Resources */,
-				AC0487A622DADD6C008EA249 /* Assets.xcassets in Resources */,
-				AC0487A422DADD6C008EA249 /* Main.storyboard in Resources */,
+				AC0347ED22E3615F00B139BF /* GoogleService-Info.plist in Resources */,
+				AC62102B22DBF30300B9BB57 /* HomeDetail.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		268C41EE84F93E9B54C67A96 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorCamera/Pods-ColorCamera-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorCamera/Pods-ColorCamera-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorCamera/Pods-ColorCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		58D65B02428919901B9C5BF9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ColorCamera-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8AB8774F8D9302138107FF3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorCamera/Pods-ColorCamera-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ColorCamera/Pods-ColorCamera-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ColorCamera/Pods-ColorCamera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC04879722DADD6C008EA249 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AC0487A122DADD6C008EA249 /* ViewController.swift in Sources */,
+				AC62101F22DBF26800B9BB57 /* MyListViewController.swift in Sources */,
+				AC62101C22DBF22F00B9BB57 /* HomeViewController.swift in Sources */,
+				AC0347F122E7424400B139BF /* Color.swift in Sources */,
+				AC62102422DBF2A600B9BB57 /* MyListDetailViewController.swift in Sources */,
+				AC62100822DBF11000B9BB57 /* AuthViewController.swift in Sources */,
+				AC62102922DBF2F200B9BB57 /* HomeDetailViewController.swift in Sources */,
 				AC04879F22DADD6C008EA249 /* AppDelegate.swift in Sources */,
+				AC62101022DBF1BF00B9BB57 /* CameraViewController.swift in Sources */,
+				AC62102E22DBF32E00B9BB57 /* LaunchViewController.swift in Sources */,
+				AC0347F322E7440E00B139BF /* ColorDataManagerDelegate.swift in Sources */,
+				AC905A5322ED5CC200067355 /* ImageViewController.swift in Sources */,
+				AC62101522DBF1F200B9BB57 /* ColorDetailViewController.swift in Sources */,
+				AC0347F522E744C400B139BF /* ColorDataManager.swift in Sources */,
+				AC0347EF22E40D5C00B139BF /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		AC0487A222DADD6C008EA249 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				AC0487A322DADD6C008EA249 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		AC0487A722DADD6C008EA249 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,6 +510,7 @@
 		};
 		AC0487AE22DADD6C008EA249 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4BE68AD391681191F15D5B32 /* Pods-ColorCamera.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +529,7 @@
 		};
 		AC0487AF22DADD6C008EA249 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EB0D55C49A4C3C6B0C509AE /* Pods-ColorCamera.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
