@@ -1,0 +1,6 @@
+framework module Pods_ColorCamera {
+  umbrella header "Pods-ColorCamera-umbrella.h"
+
+  export *
+  module * { export * }
+}
