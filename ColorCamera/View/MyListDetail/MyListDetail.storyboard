@@ -316,7 +316,6 @@
                                         </connections>
                                     </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="TU8-8S-Pku"/>
-                                    <barButtonItem systemItem="trash" id="TqE-r1-JTy"/>
                                 </items>
                                 <color key="barTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </toolbar>
@@ -356,6 +355,7 @@
                         <outlet property="hLabel" destination="cHG-JC-3Zz" id="8Ke-Lb-Wru"/>
                         <outlet property="hexLabel" destination="Vf9-Bx-LqD" id="GI8-GL-fUU"/>
                         <outlet property="imageView" destination="DvX-O5-fla" id="MHh-CN-W9i"/>
+                        <outlet property="label" destination="5BE-gD-lc8" id="8wx-Oo-mzo"/>
                         <outlet property="rLabel" destination="ZWr-1Z-eL0" id="i1L-92-bfH"/>
                         <outlet property="sLabel" destination="PSj-vF-95B" id="f17-CC-hYQ"/>
                         <outlet property="toolBar" destination="jK9-Om-TWd" id="x2Q-mu-QZG"/>

@@ -28,6 +28,7 @@ class MyListDetailViewController: UIViewController {
     @IBOutlet weak var hexLabel: UILabel!
     @IBOutlet weak var toolBar: UIToolbar!
     @IBOutlet weak var actionButton: UIBarButtonItem!
+    @IBOutlet weak var label: UILabel!
     
 
     override func viewDidLoad() {
@@ -60,22 +61,20 @@ class MyListDetailViewController: UIViewController {
         vLabel.text = color.hsv[2]
         
         hexLabel.text = color.hex
+        
+        label.text = color.name + "色"
       
     }
     
     //airdropの処理
     @IBAction func tapActionButton(_ sender: Any) {
         //共有する項目
-        let shareRGB = "111"
-        let shareHSV = NSURL(string: "HSV")!
-        let hex = "123456"
-        let shareImage = UIImage(named: "home")!
-        
+        let shareRGB = "R:\(rLabel.text!),G:\(gLabel.text!),B:\(bLabel.text!)\nH:\(hLabel.text!),S:\(sLabel.text!),V:\(vLabel.text!)\nHEX:\(hexLabel.text!)"
         //LINEを追加する
         let LineKit = LINEActivity()
         let myApplicationActivities = [LineKit]
         
-        let activityItems = [shareRGB, shareHSV, hex, shareImage] as [Any]
+        let activityItems = [shareRGB] as [Any]
         
         //初期化処理
         let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: myApplicationActivities)

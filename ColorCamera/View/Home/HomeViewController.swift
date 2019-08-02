@@ -113,7 +113,7 @@ extension HomeViewController: UICollectionViewDelegate,UICollectionViewDataSourc
         let gColor = CGFloat(gColorInt)
         let bColor = CGFloat(bColorInt)
         
-        label.text = color.name
+        label.text = color.name + "色"
         imageView.backgroundColor = UIColor(red: rColor/255, green: gColor/255, blue: bColor/255, alpha: 1)
         if imageView.backgroundColor == UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 1) {
             imageView.layer.borderColor = UIColor.white.cgColor

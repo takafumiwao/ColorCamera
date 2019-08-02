@@ -15,6 +15,7 @@
 		AC0347F522E744C400B139BF /* ColorDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC0347F422E744C400B139BF /* ColorDataManager.swift */; };
 		AC04879F22DADD6C008EA249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC04879E22DADD6C008EA249 /* AppDelegate.swift */; };
 		AC0487A922DADD6C008EA249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC0487A722DADD6C008EA249 /* LaunchScreen.storyboard */; };
+		AC4E24D922EFAEAE00554305 /* Camera1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC4E24D822EFAEAE00554305 /* Camera1ViewController.swift */; };
 		AC62100822DBF11000B9BB57 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62100722DBF11000B9BB57 /* AuthViewController.swift */; };
 		AC62100D22DBF19400B9BB57 /* Auth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC62100C22DBF19400B9BB57 /* Auth.storyboard */; };
 		AC62101022DBF1BF00B9BB57 /* CameraViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC62100F22DBF1BF00B9BB57 /* CameraViewController.swift */; };
@@ -49,6 +50,7 @@
 		AC04879E22DADD6C008EA249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AC0487A822DADD6C008EA249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AC0487AA22DADD6C008EA249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AC4E24D822EFAEAE00554305 /* Camera1ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera1ViewController.swift; sourceTree = "<group>"; };
 		AC62100722DBF11000B9BB57 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		AC62100C22DBF19400B9BB57 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
 		AC62100F22DBF1BF00B9BB57 /* CameraViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraViewController.swift; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				AC62100F22DBF1BF00B9BB57 /* CameraViewController.swift */,
 				AC905A5222ED5CC200067355 /* ImageViewController.swift */,
 				AC62101122DBF1D000B9BB57 /* Camera.storyboard */,
+				AC4E24D822EFAEAE00554305 /* Camera1ViewController.swift */,
 			);
 			path = Camera;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 				AC62102422DBF2A600B9BB57 /* MyListDetailViewController.swift in Sources */,
 				AC62100822DBF11000B9BB57 /* AuthViewController.swift in Sources */,
 				AC62102922DBF2F200B9BB57 /* HomeDetailViewController.swift in Sources */,
+				AC4E24D922EFAEAE00554305 /* Camera1ViewController.swift in Sources */,
 				AC04879F22DADD6C008EA249 /* AppDelegate.swift in Sources */,
 				AC62101022DBF1BF00B9BB57 /* CameraViewController.swift in Sources */,
 				AC62102E22DBF32E00B9BB57 /* LaunchViewController.swift in Sources */,

@@ -18,6 +18,7 @@ class HomeDetailViewController: UIViewController {
     var color:Color?
     var count:Int?
     //storyboardに紐付け
+    @IBOutlet weak var label: UILabel!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var colorText: UITextField!
     //RGB
@@ -69,7 +70,7 @@ class HomeDetailViewController: UIViewController {
         vLabel.text = color.hsv[2]
         
         hexLabel.text = color.hex
-        
+        label.text = color.name + "色"
         
     }
     
@@ -84,16 +85,12 @@ class HomeDetailViewController: UIViewController {
     @IBAction func tapAirDrop(_ sender: Any) {
         
         //共有する項目
-        let shareRGB = "111"
-        let shareHSV = NSURL(string: "HSV")!
-        let hex = "123456"
-        let shareImage = UIImage(named: "home")!
-        
+        let shareRGB = "R:\(rLabel.text!),G:\(gLabel.text!),B:\(bLabel.text!)\nH:\(hLabel.text!),S:\(sLabel.text!),V:\(vLabel.text!)\nHEX:\(hexLabel.text!)"
         //LINEを追加する
         let LineKit = LINEActivity()
         let myApplicationActivities = [LineKit]
         
-        let activityItems = [shareRGB, shareHSV, hex, shareImage] as [Any]
+        let activityItems = [shareRGB] as [Any]
         
         //初期化処理
         let activityVC = UIActivityViewController(activityItems: activityItems, applicationActivities: myApplicationActivities)
@@ -114,9 +111,6 @@ class HomeDetailViewController: UIViewController {
     //お気に入りに追加の処理
     @IBAction func tapFavorite(_ sender: Any) {
         
-        SCLAlertView().showTitle("ok", subTitle: "ok", timeout: SCLAlertView.SCLTimeoutConfiguration.init(timeoutValue: 1.0, timeoutAction: {
-            print("ok")
-        }), completeText: "ok", style: .success, colorStyle: 0xFFFF00, colorTextButton: 0x000000, circleIconImage: UIImage(named: "colorCamera"), animationStyle: .bottomToTop)
         //ユーザー情報を取得
         let user = Auth.auth().currentUser
         let userId = user?.uid
@@ -153,7 +147,22 @@ class HomeDetailViewController: UIViewController {
             
         }
         
-        
+        DispatchQueue.main.async {
+            
+            let appearance = SCLAlertView.SCLAppearance(showCloseButton: false)
+            let alertView = SCLAlertView(appearance: appearance)
+            alertView.showTitle("", subTitle: "お気に入りに登録しました", style: .success)
+            
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1.5, execute: {
+                let storyboard: UIStoryboard = UIStoryboard(name: "Home", bundle: nil)
+                let next = storyboard.instantiateInitialViewController() as! UIViewController
+                self.present(next, animated: true, completion: nil)
+//                self.dismiss(animated: true, completion: nil)
+            })
+            
+            
+            
+        }
         
         
     }

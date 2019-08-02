@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gRN-BH-G1c">
-    <device id="retina6_1" orientation="portrait">
+    <device id="retina4_0" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,17 +15,17 @@
             <objects>
                 <viewController id="gRN-BH-G1c" customClass="CameraViewController" customModule="ColorCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4ob-vg-ZAe">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zi3-32-73V">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8uc-QT-Xyn">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LnD-E3-S5I">
-                                        <rect key="frame" x="0.0" y="782" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="488" width="320" height="80"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="63" translatesAutoresizingMaskIntoConstraints="NO" id="9Nh-Ny-nvC">
-                                                <rect key="frame" x="46.5" y="7.5" width="321" height="65"/>
+                                                <rect key="frame" x="-0.5" y="7.5" width="321" height="65"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fky-0f-cjV">
                                                         <rect key="frame" x="0.0" y="0.0" width="65" height="65"/>
@@ -61,85 +61,79 @@
                                                             <constraint firstAttribute="width" constant="65" id="4fs-c2-hW5"/>
                                                             <constraint firstAttribute="height" constant="65" id="RHf-CE-MS5"/>
                                                         </constraints>
-                                                        <state key="normal" image="switch"/>
-                                                        <connections>
-                                                            <action selector="tapswitchButton:" destination="gRN-BH-G1c" eventType="touchUpInside" id="nWt-1n-UqD"/>
-                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
-                                            <constraint firstItem="9Nh-Ny-nvC" firstAttribute="centerX" secondItem="LnD-E3-S5I" secondAttribute="centerX" id="5cr-Uo-Wxb"/>
-                                            <constraint firstItem="9Nh-Ny-nvC" firstAttribute="centerY" secondItem="LnD-E3-S5I" secondAttribute="centerY" id="eKw-eP-7sk"/>
-                                            <constraint firstAttribute="height" constant="80" id="zbK-Xe-jmB"/>
+                                            <constraint firstAttribute="height" constant="80" id="6kH-FP-SWX"/>
+                                            <constraint firstItem="9Nh-Ny-nvC" firstAttribute="centerY" secondItem="LnD-E3-S5I" secondAttribute="centerY" id="PId-Ld-bS4"/>
+                                            <constraint firstItem="9Nh-Ny-nvC" firstAttribute="centerX" secondItem="LnD-E3-S5I" secondAttribute="centerX" id="X5a-4Z-muq"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="LnD-E3-S5I" firstAttribute="leading" secondItem="Zi3-32-73V" secondAttribute="leading" id="BNB-9t-5eP"/>
-                                    <constraint firstItem="LnD-E3-S5I" firstAttribute="centerX" secondItem="Zi3-32-73V" secondAttribute="centerX" id="ZtC-c7-cfC"/>
-                                    <constraint firstAttribute="trailing" secondItem="LnD-E3-S5I" secondAttribute="trailing" id="hq1-be-NVv"/>
-                                    <constraint firstAttribute="bottom" secondItem="LnD-E3-S5I" secondAttribute="bottom" id="zT2-l5-lJV"/>
+                                    <constraint firstAttribute="bottom" secondItem="LnD-E3-S5I" secondAttribute="bottom" id="Avx-yj-1IS"/>
+                                    <constraint firstAttribute="trailing" secondItem="LnD-E3-S5I" secondAttribute="trailing" id="nfl-NX-MUJ"/>
+                                    <constraint firstItem="LnD-E3-S5I" firstAttribute="leading" secondItem="8uc-QT-Xyn" secondAttribute="leading" id="tMR-of-s0y"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Zi3-32-73V" firstAttribute="leading" secondItem="4ob-vg-ZAe" secondAttribute="leading" id="8kH-pM-G6W"/>
-                            <constraint firstItem="Zi3-32-73V" firstAttribute="trailing" secondItem="5Ky-DT-ngZ" secondAttribute="trailing" id="K9v-qR-0Un"/>
-                            <constraint firstItem="Zi3-32-73V" firstAttribute="top" secondItem="4ob-vg-ZAe" secondAttribute="top" id="qVe-zB-QuP"/>
-                            <constraint firstItem="Zi3-32-73V" firstAttribute="bottom" secondItem="5Ky-DT-ngZ" secondAttribute="bottom" id="wc7-VA-MDn"/>
+                            <constraint firstItem="8uc-QT-Xyn" firstAttribute="bottom" secondItem="5Ky-DT-ngZ" secondAttribute="bottom" id="1Oc-Mk-DQc"/>
+                            <constraint firstItem="8uc-QT-Xyn" firstAttribute="leading" secondItem="5Ky-DT-ngZ" secondAttribute="leading" id="4ZT-DX-9J1"/>
+                            <constraint firstItem="8uc-QT-Xyn" firstAttribute="top" secondItem="4ob-vg-ZAe" secondAttribute="top" id="hJQ-bU-esc"/>
+                            <constraint firstItem="8uc-QT-Xyn" firstAttribute="trailing" secondItem="5Ky-DT-ngZ" secondAttribute="trailing" id="zyM-rB-QV7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="5Ky-DT-ngZ"/>
                     </view>
                     <connections>
-                        <outlet property="cameraView" destination="Zi3-32-73V" id="5ro-4z-e7S"/>
+                        <outlet property="cameraView" destination="8uc-QT-Xyn" id="hCD-HH-ecj"/>
                         <outlet property="homeButton" destination="fky-0f-cjV" id="avK-Mx-B9i"/>
                         <outlet property="shootingButton" destination="g7g-2g-JXo" id="h64-iV-Os4"/>
-                        <outlet property="switchButton" destination="uI7-RN-zTd" id="PiI-Wp-his"/>
                         <segue destination="fRh-eu-bYQ" kind="show" identifier="image" id="TmR-Ah-MGV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGu-wn-YFJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="63.75" y="150"/>
+            <point key="canvasLocation" x="60.869565217391312" y="150"/>
         </scene>
         <!--Image View Controller-->
         <scene sceneID="HQp-Y6-SZy">
             <objects>
                 <viewController storyboardIdentifier="image" id="fRh-eu-bYQ" customClass="ImageViewController" customModule="ColorCamera" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2J-BU-EHW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BUG-5b-48c">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BUF-XL-pOH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <gestureRecognizers/>
                                 <connections>
-                                    <outletCollection property="gestureRecognizers" destination="kc7-S3-NhE" appends="YES" id="bRI-S4-wm0"/>
+                                    <outletCollection property="gestureRecognizers" destination="YpQ-7d-XRv" appends="YES" id="OZV-qa-tLh"/>
                                 </connections>
-                            </scrollView>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BUG-5b-48c" firstAttribute="top" secondItem="h2J-BU-EHW" secondAttribute="top" id="BHp-pG-mP8"/>
-                            <constraint firstAttribute="bottom" secondItem="BUG-5b-48c" secondAttribute="bottom" id="Ps4-vn-zn7"/>
-                            <constraint firstItem="BUG-5b-48c" firstAttribute="trailing" secondItem="m8c-7f-Q1a" secondAttribute="trailing" id="qaG-gu-x5o"/>
-                            <constraint firstItem="BUG-5b-48c" firstAttribute="leading" secondItem="m8c-7f-Q1a" secondAttribute="leading" id="uAZ-yJ-JaU"/>
+                            <constraint firstItem="BUF-XL-pOH" firstAttribute="trailing" secondItem="m8c-7f-Q1a" secondAttribute="trailing" id="AEJ-Nd-opF"/>
+                            <constraint firstItem="BUF-XL-pOH" firstAttribute="top" secondItem="h2J-BU-EHW" secondAttribute="top" id="Lp8-4i-VD9"/>
+                            <constraint firstItem="BUF-XL-pOH" firstAttribute="leading" secondItem="m8c-7f-Q1a" secondAttribute="leading" id="UAb-31-BoT"/>
+                            <constraint firstAttribute="bottom" secondItem="BUF-XL-pOH" secondAttribute="bottom" id="fLa-Oh-s6D"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="m8c-7f-Q1a"/>
                     </view>
                     <connections>
-                        <outlet property="scrollView" destination="BUG-5b-48c" id="N34-Jk-T1A"/>
+                        <outlet property="imageView" destination="BUF-XL-pOH" id="BHb-Zz-yXj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6HV-Lg-BTk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tapGestureRecognizer id="kc7-S3-NhE">
+                <tapGestureRecognizer id="YpQ-7d-XRv">
                     <connections>
-                        <action selector="oneTapImage:" destination="fRh-eu-bYQ" id="0QT-gp-xvJ"/>
+                        <action selector="getImageRGB:" destination="fRh-eu-bYQ" id="S84-31-zzm"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -148,6 +142,5 @@
     </scenes>
     <resources>
         <image name="home" width="48" height="48"/>
-        <image name="switch" width="48" height="48"/>
     </resources>
 </document>

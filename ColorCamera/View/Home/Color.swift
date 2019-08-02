@@ -32,3 +32,22 @@ class Color:NSObject {
     }
     
 }
+
+class HSV:NSObject {
+    
+    //色相
+    var hue: Double = 0
+    
+    //彩度
+    var saturation: Double = 0
+    
+    //明度
+    var value: Double = 0
+    
+    init(hue: Double, saturation: Double, value: Double) {
+        self.hue = hue
+        self.saturation = saturation
+        self.value = value
+    }
+}
+

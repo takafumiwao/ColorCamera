@@ -351,6 +351,7 @@
                         <outlet property="hLabel" destination="XxG-RO-gR4" id="hd6-tX-NHU"/>
                         <outlet property="hexLabel" destination="b8C-aP-F0k" id="dEQ-H3-HJB"/>
                         <outlet property="imageView" destination="S3y-Zh-d1n" id="IvV-5N-Hpq"/>
+                        <outlet property="label" destination="MSY-hx-ZVK" id="VOg-m8-e3h"/>
                         <outlet property="rLabel" destination="g3I-11-gwM" id="4G0-5f-KRn"/>
                         <outlet property="sLabel" destination="vBI-wW-lLG" id="uJ2-9F-Leq"/>
                         <outlet property="toolBar" destination="1wc-qi-C8W" id="il1-hX-eez"/>
